@@ -1,0 +1,27 @@
+h1 {
+	font-size: 18px;
+	text-align:center;
+}
+h2 {
+	font-size: 16px;
+	text-align:center;
+}
+p {
+	font-size: 14px;
+	text-align:center;
+}
+table {
+	text-align:center;
+}
+body {
+	background-color: #ecd2ae;
+	text-align:center;
+}
+.page {
+	background-color: dab49d;
+	border: 10px ridge #f3e9dc;
+}
+.entete {
+	border: 10px ridge #edcac9;
+}
+
