@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" language="javascript" src="code.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <meta charset="utf-8" />
         <div class="entete">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <img src="assets/img/shao.png" height="120" width="120" img align="top">
@@ -45,5 +46,57 @@
         </ol>
         </div>
 <a href="http://www.univ-paris3.fr">Le site officiel de Sorbonne Nouvelle</a>
+    
+<div>
+
+<h3> Analyse des données dans un fichier</h3>
+
+
+    <div id="page-wrapper">     
+        <button onclick="alert('Bonjour et bienvenue sur le site !');"><span>Bonjour !</span></button>
+        
+        <div>
+           
+     
+             <input type="file" id="fileInput">
+        </div><br/>
+            <p align="center"><small><span style="background-color: rgb(255, 204, 51); font-family: arial,helvetica,sans-serif; font-variant: small-caps; font-size: 90%; padding: 2px; border-right: 1px solid rgb(204, 153, 0); border-bottom: 1px solid rgb(204, 153, 0);">Délimiteur(s)</span> :<input type="text" value=" ,;’'~|&#@=`-.?!%*$()[]{}_:+«»§\/" name="delim" id="delimID"  size="40"/></small>
+
+        <br/>
+        <br/>
+        
+        
+        <br/>
+<small><span style="background-color: #FDBBD2; font-family: arial,helvetica,sans-serif; font-variant: small-caps; font-size: 90%; padding: 2px; 
+ border-right: 1px solid rgb(204, 153, 0); border-bottom: 1px solid rgb(204, 153, 0);">Pôle</span> :
+<input type="text" value="Entrez le pôle de la concordance..." name="pole" id="poleID"  size="40"/></small>
+
+        <br/>       
+<small><span style="background-color: #FDBBD2; font-family: arial,helvetica,sans-serif; font-variant: small-caps; font-size: 90%; padding: 2px; 
+border-right: 1px solid rgb(204, 153, 0); border-bottom: 1px solid rgb(204, 153, 0);">Longueur</span> :
+<input type="text" placeholder="Entrez la longueur" name="lg" id="lgID"  size="40"/></small>
+        <br/><br/>
+
+    
+        <button class="submit" onclick="segmentation();"><span>Segmentation</span></button>
+        <button class="submit" onclick="affichedico()"><span>Dictionnaire</span></button>
+        <button class="submit" onclick="concordance_v2()"><span>Concordancier</span></button>
+        <button class="submit" onclick="majuscule()"><span>Mettre le texte en majuscules</span></button>
+        <button class="submit" onclick="minuscule()"><span>Mettre le texte en minuscules</span></button>
+        <button class="submit" onclick="motlespluslongs()"><span>Mots les plus longs</span></button>
+        <button class="submit" onclick="phrases()"><span>Nombre de phrases</span></button>
+    </div> 
+<div id="placeholder" style="width:100%"></div>
+<br/>
+<div id="Global">   
+    <div id="fileDisplayArea"></div>
+    <div id="page-analysis"></div>
+</div>
+
+</div>
+
+
+
+
     </body>
 </html>
